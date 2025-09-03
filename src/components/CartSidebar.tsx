@@ -9,7 +9,7 @@ type CartSidebarProps = {
   onOrderStartNew?: () => void
 }
 
-const CartSidebar = ({ cart, increaseQty, decreaseQty, deleteFromCart, onOrderStartNew }: CartSidebarProps) => {
+const CartSidebar = ({ cart, deleteFromCart, onOrderStartNew }: CartSidebarProps) => {
   const [showModal, setShowModal] = useState(false);
 
   const orderTotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);

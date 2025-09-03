@@ -1,4 +1,3 @@
-import { useState } from "react"
 import type { CartItem } from "../App"
 
 type ProductProps = {
@@ -27,7 +26,6 @@ const ProductCard = ({
   addToCart,
   increaseQty,
   decreaseQty,
-  deleteFromCart,
   quantity,
   id
 }: ProductProps) => {
